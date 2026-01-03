@@ -57,7 +57,7 @@ export default function TestimonialSection() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-gray-700 leading-relaxed italic">"{testimonial.quote}"</p>
+                <p className="text-gray-700 leading-relaxed italic">&quot;{testimonial.quote}&quot;</p>
 
                 {/* Separator */}
                 <div className="h-px bg-gray-200"></div>
