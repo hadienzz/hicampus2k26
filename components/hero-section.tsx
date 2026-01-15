@@ -32,7 +32,7 @@ export default function HeroSection() {
                 <Calendar size={20} className="text-blue-600" />
                 <span className="font-semibold">
                   {/* Sabtu, 14 Februari 2026 | 08.00 - 10.15 WIB */}
-                  tanya syarif
+                  24 Januari 2026
                 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-700">

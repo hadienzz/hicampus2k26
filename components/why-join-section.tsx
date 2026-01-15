@@ -1,42 +1,49 @@
-import { Card } from "@/components/ui/card"
-import { MessageCircle, Lightbulb, Heart, Zap } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import { MessageCircle, Lightbulb, Heart, Zap } from "lucide-react";
 
 export default function WhyJoinSection() {
   const reasons = [
     {
       icon: <MessageCircle className="w-8 h-8" />,
       emoji: "💬",
-      title: "Bisa tanya hal-hal yang nggak ada di brosur kampus",
-      description: "Pertanyaan boleh apa aja, dari yang serius sampai yang santai. Alumni siap jawab semua!",
+      title: "Tanya Langsung Peluang Lolos & Strategi Masuk PTN",
+      description:
+        "Kamu bisa tanya peluang masuk jurusan tertentu, perbedaan SNBP, SNBT, dan jalur Mandiri, strategi pilih jurusan biar aman & realistis langsung ke alumni.",
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,
       emoji: "💡",
-      title: "Bantu kamu yang masih bingung pilih jurusan",
-      description: "Belum tahu mau ambil apa? Di sini kamu bisa dengar pros-cons dari setiap jurusan.",
+      title: "2. Bantu Menentukan Jurusan yang Cocok & Realistis",
+      description:
+        "Bukan hanya dilihat dari minat, tapi juga tingkat persaingan jurusan, beban kuliah aslinya dan prospek kerja setelah lulus biar kamu nggak salah pilih dan nyesel di tengah jalan.",
     },
     {
       icon: <Heart className="w-8 h-8" />,
       emoji: "❤️",
-      title: "Dengar pengalaman asli, bukan cuma teori",
-      description: "Cerita yang inspiring dan relatable dari orang-orang yang udah terbukti berhasil.",
+      title: "3. Dengar Realita Kehidupan Kampus yang Sebenarnya  ",
+      description:
+        "Kami dengan senang hati cerita jujur soal transisi SMA ke kuliah, sistem belajar di PTN dan struggle mahasiswa baru langsung dari yang sudah menjalaninya.",
     },
     {
       icon: <Zap className="w-8 h-8" />,
       emoji: "⚡",
-      title: "Tambah semangat dan motivasi belajar",
-      description: "Pulang dengan energy baru dan tekad kuat buat mencapai kampus impianmu!",
+      title: "Pulang dengan Rencana, Bukan Cuma Semangat",
+      description:
+        "Hi Campus 2026 membantumu mengetahui jurusan & kampus target, paham jalur masuk yang mau dikejar dan punya gambaran langkah selanjutnya sebelum lulus SMA.",
     },
-  ]
+  ];
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Kenapa kamu wajib ikut acara ini?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Apa yang Akan Kamu Dapatkan dari Campus Expo Ini?
+          </h2>
           <p className="text-lg text-gray-600">
-            Alasan kenapa Hicampus bisa jadi game-changer buat perjalananmu masuk PTN
+            Alasan kenapa Hicampus bisa jadi game-changer buat perjalananmu
+            masuk PTN
           </p>
         </div>
 
@@ -50,7 +57,9 @@ export default function WhyJoinSection() {
               <div className="flex gap-4">
                 <div className="text-3xl">{reason.emoji}</div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{reason.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    {reason.title}
+                  </h3>
                   <p className="text-gray-600">{reason.description}</p>
                 </div>
               </div>
@@ -59,5 +68,5 @@ export default function WhyJoinSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
