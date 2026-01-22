@@ -42,12 +42,12 @@ const faqItems: FAQItem[] = [
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
+    <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#f4ecff] via-[#fff8eb] to-[#fef6dd]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Pertanyaan yang Sering Diajukan</h2>
-          <p className="text-lg text-gray-600">Kalau ada yang masih bingung, jawaban di bawah ini mungkin membantu</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#2b1b60] mb-4">Pertanyaan yang Sering Diajukan</h2>
+          <p className="text-lg text-[#4c3f7d]">Kalau ada yang masih bingung, jawaban di bawah ini mungkin membantu</p>
         </div>
 
         {/* Accordion */}
@@ -56,12 +56,12 @@ export default function FAQSection() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border border-gray-200 rounded-lg px-6 py-2 data-[state=open]:bg-blue-50 transition-colors"
+              className="border border-[#e2d5ff] rounded-lg px-6 py-2 data-[state=open]:bg-[#f4ecff] transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-4 text-left font-semibold text-gray-900">
+              <AccordionTrigger className="hover:no-underline py-4 text-left font-semibold text-[#2b1b60]">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 pb-4">{item.answer}</AccordionContent>
+              <AccordionContent className="text-[#4c3f7d] pb-4">{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

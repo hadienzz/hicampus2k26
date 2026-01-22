@@ -37,12 +37,12 @@ const schedule: ScheduleItem[] = [
 
 export default function ScheduleSection() {
   return (
-    <section id="schedule" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-orange-50 to-white">
+    <section id="schedule" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#fff1d2] via-[#fff8eb] to-[#f4ecff]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Rundown Acara</h2>
-          <div className="space-y-2 text-gray-600">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#2b1b60] mb-4">Rundown Acara</h2>
+          <div className="space-y-2 text-[#4c3f7d]">
             <p>
               📍 <span className="font-semibold">Lokasi:</span> Aula Sekolah
             </p>
@@ -59,18 +59,18 @@ export default function ScheduleSection() {
               <div key={index} className="flex gap-4">
                 {/* Timeline dot and line */}
                 <div className="flex flex-col items-center">
-                  <div className="w-4 h-4 bg-blue-600 rounded-full mt-3"></div>
-                  {index !== schedule.length - 1 && <div className="w-1 h-24 bg-blue-200"></div>}
+                  <div className="w-4 h-4 bg-[#f7c768] rounded-full mt-3"></div>
+                  {index !== schedule.length - 1 && <div className="w-1 h-24 bg-[#f4ecff]"></div>}
                 </div>
 
                 {/* Content */}
-                <Card className="flex-1 p-4 border-0 hover:shadow-md transition-shadow bg-white">
+                <Card className="flex-1 p-4 border-0 hover:shadow-md transition-shadow bg-white/80">
                   <div className="flex items-start gap-3">
-                    <Clock size={20} className="text-orange-500 flex-shrink-0 mt-1" />
+                    <Clock size={20} className="text-[#f49b3f] flex-shrink-0 mt-1" />
                     <div className="flex-1">
-                      <p className="text-sm font-bold text-orange-600">{item.time}</p>
-                      <h3 className="text-lg font-bold text-gray-900 mt-1">{item.activity}</h3>
-                      <p className="text-gray-600 text-sm mt-1">{item.description}</p>
+                      <p className="text-sm font-bold text-[#f49b3f]">{item.time}</p>
+                      <h3 className="text-lg font-bold text-[#2b1b60] mt-1">{item.activity}</h3>
+                      <p className="text-[#4c3f7d] text-sm mt-1">{item.description}</p>
                     </div>
                   </div>
                 </Card>

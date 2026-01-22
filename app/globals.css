@@ -4,91 +4,91 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color scheme for youth-focused event campaign */
-  /* Primary Colors - Vibrant Blue for education & trust */
-  --primary: oklch(0.55 0.3 260); /* Bright, energetic blue */
-  --primary-foreground: oklch(1 0 0);
+  /* Hi Campus 2026 brochure-inspired palette */
+  /* Primary: warm gold ribbon */
+  --primary: #f7c768;
+  --primary-foreground: #231642; /* deep purple text on gold */
 
-  /* Secondary Colors - Warm Orange accent for excitement */
-  --secondary: oklch(0.72 0.25 40); /* Warm orange */
-  --secondary-foreground: oklch(0.145 0 0);
+  /* Secondary: night sky purple */
+  --secondary: #3b257f;
+  --secondary-foreground: #fdf7ea;
 
-  /* Neutral Colors */
-  --background: oklch(1 0 0); /* White */
-  --foreground: oklch(0.145 0 0); /* Dark Gray */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --muted: oklch(0.97 0 0); /* Light Gray */
-  --muted-foreground: oklch(0.556 0 0);
+  /* Neutrals: warm, friendly background */
+  --background: #fff8eb;
+  --foreground: #1f163d;
+  --card: #ffffff;
+  --card-foreground: #1f163d;
+  --muted: #f4ecff; /* soft lavender */
+  --muted-foreground: #4c3f7d;
 
-  /* Accents */
-  --accent: oklch(0.72 0.25 40); /* Orange accent */
-  --accent-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  /* Accents: sunrise orange + highlight */
+  --accent: #f49b3f;
+  --accent-foreground: #1f163d;
+  --popover: #ffffff;
+  --popover-foreground: #1f163d;
 
   /* Destructive */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
+  --destructive: #e5484d;
+  --destructive-foreground: #fff7f7;
 
   /* UI Elements */
-  --border: oklch(0.922 0 0); /* Very light gray */
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.55 0.3 260); /* Blue */
+  --border: #e2d5ff;
+  --input: #e2d5ff;
+  --ring: #f7c768;
 
-  /* Chart Colors */
-  --chart-1: oklch(0.55 0.3 260);
-  --chart-2: oklch(0.72 0.25 40);
-  --chart-3: oklch(0.65 0.2 120);
-  --chart-4: oklch(0.75 0.2 280);
-  --chart-5: oklch(0.6 0.22 30);
+  /* Chart Colors - brand variations */
+  --chart-1: #f7c768; /* gold */
+  --chart-2: #7c6ae6; /* light purple */
+  --chart-3: #f49b3f; /* orange-gold */
+  --chart-4: #ff7aa2; /* pink accent */
+  --chart-5: #2b1b60; /* deep purple */
 
   /* Sidebar */
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #120b33;
+  --sidebar-foreground: #fdf7ea;
+  --sidebar-primary: #f7c768;
+  --sidebar-primary-foreground: #231642;
+  --sidebar-accent: #3b257f;
+  --sidebar-accent-foreground: #fdf7ea;
+  --sidebar-border: #2b1b60;
+  --sidebar-ring: #f7c768;
 
   --radius: 0.625rem;
 }
 
 .dark {
-  --primary: oklch(0.65 0.3 260);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.82 0.25 40);
-  --secondary-foreground: oklch(0.145 0 0);
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.2 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.2 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.82 0.25 40);
-  --accent-foreground: oklch(0.145 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.65 0.3 260);
-  --chart-1: oklch(0.65 0.3 260);
-  --chart-2: oklch(0.82 0.25 40);
-  --chart-3: oklch(0.75 0.2 120);
-  --chart-4: oklch(0.85 0.2 280);
-  --chart-5: oklch(0.7 0.22 30);
-  --sidebar: oklch(0.15 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.65 0.3 260);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.25 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --primary: #f7c768;
+  --primary-foreground: #231642;
+  --secondary: #7c6ae6;
+  --secondary-foreground: #120b33;
+  --background: #120b33;
+  --foreground: #fdf7ea;
+  --card: #1a1045;
+  --card-foreground: #fdf7ea;
+  --popover: #1a1045;
+  --popover-foreground: #fdf7ea;
+  --muted: #241457;
+  --muted-foreground: #c6b9ff;
+  --accent: #f49b3f;
+  --accent-foreground: #120b33;
+  --destructive: #f97373;
+  --destructive-foreground: #1b0b11;
+  --border: #2b1b60;
+  --input: #2b1b60;
+  --ring: #f7c768;
+  --chart-1: #f7c768;
+  --chart-2: #7c6ae6;
+  --chart-3: #f49b3f;
+  --chart-4: #ff7aa2;
+  --chart-5: #f4ecff;
+  --sidebar: #08041c;
+  --sidebar-foreground: #fdf7ea;
+  --sidebar-primary: #f7c768;
+  --sidebar-primary-foreground: #231642;
+  --sidebar-accent: #3b257f;
+  --sidebar-accent-foreground: #fdf7ea;
+  --sidebar-border: #241457;
+  --sidebar-ring: #f7c768;
 }
 
 @theme inline {

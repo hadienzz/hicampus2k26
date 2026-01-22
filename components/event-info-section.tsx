@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Lightbulb, BookOpen, Target } from "lucide-react";
 
-export default function EventInfoSection() {
+export default function zEventInfoSection() {
   const features = [
     {
       icon: <Lightbulb className="w-8 h-8 text-orange-500" />,
@@ -11,13 +11,13 @@ export default function EventInfoSection() {
     },
     {
       icon: <BookOpen className="w-8 h-8 text-blue-600" />,
-      title: "Belajar strategi lolos SNBT / ujian masuk",
+      title: "Belajar strategi lolos SNBP / ujian masuk",
       description:
         "Talkshow ini membantumu memahami proses dan motivasi dibalik pilihan yang ada serta memberikan gambaran nyata mengenai proses beradaptasi di lingkungan kampus dan mengembangkan diri sebagai mahasiswa.",
     },
     {
       icon: <Target className="w-8 h-8 text-orange-500" />,
-      title: "4. Mendapat gambaran nyata mengenai Kampus dan Jurusan",
+      title: "Mendapat gambaran nyata mengenai Kampus dan Jurusan",
       description:
         "Hi Campus 2026 mendukung kamu untuk mengetahui Kampus dan jurusan yang akan menjadi tujuanmu melalui sesi Talkshow dan tanya jawab kepada Alumni yang sudah diterima.",
     },

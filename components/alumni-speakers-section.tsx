@@ -69,7 +69,7 @@ export default function AlumniSpeakersSection() {
         {/* Header */}
         <div className="mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
-            Pembicara Alumni
+            Temukan Kampus Impianmu!
           </h2>
           <p className="text-lg text-gray-600">
             Kenalan dengan kakak alumni yang akan sharing di acara Hicampus:
