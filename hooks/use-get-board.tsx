@@ -1,18 +1,24 @@
 import axiosInstance from "@/lib/axios";
 import { useQuery } from "@tanstack/react-query";
 
-interface VisionBoardResponse {
+export interface VisionBoardItem {
   id: string;
   name: string;
   photo_url: string;
-  text: string;
+  message: string;
 }
 
-const fetchBoard = async (): Promise<VisionBoardResponse[]> => {
-  const response =
-    await axiosInstance.get<VisionBoardResponse[]>("/api/vision-board/");
+interface VisionBoardApiResponse {
+  status: "success" | "error";
+  message: string;
+  data?: VisionBoardItem[];
+}
 
-  return response.data;
+const fetchBoard = async (): Promise<VisionBoardItem[]> => {
+  const response =
+    await axiosInstance.get<VisionBoardApiResponse>("api/vision-board/get");
+
+  return response.data.data ?? [];
 };
 
 const useGetBoard = () => {
@@ -22,7 +28,7 @@ const useGetBoard = () => {
   });
 
   return {
-    boards: data,
+    boards: data ?? [],
     isLoading,
     isError,
   };

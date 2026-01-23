@@ -1,53 +1,59 @@
-import { Card } from "@/components/ui/card"
-import { Clock } from "lucide-react"
+import { Card } from "@/components/ui/card";
 
 interface ScheduleItem {
-  time: string
-  activity: string
-  description: string
+  activity: string;
+  description: string;
 }
 
 const schedule: ScheduleItem[] = [
   {
-    time: "08.00 – 08.15",
+    activity: "Open Gate",
+    description:
+      "Peserta registrasi, masuk ke ruangan, dan menuju tempat duduk untuk mulai acara.",
+  },
+  {
     activity: "Pembukaan",
-    description: "Sapaan singkat dari pihak sekolah dan host Hicampus",
+    description:
+      "Sambutan dari pihak sekolah dan MC Hi Campus, serta pengenalan rangkaian acara.",
   },
   {
-    time: "08.15 – 09.00",
-    activity: "Sharing Perjalanan Masuk PTN",
-    description: "Cerita lengkap dari alumni tentang prosesnya lolos PTN",
+    activity: "Parade",
+    description:
+      "Perkenalan singkat para alumni dan kampus tujuan mereka secara bergantian.",
   },
   {
-    time: "09.00 – 09.30",
-    activity: "Sesi Tanya Jawab",
-    description: "Kesempatan tanya langsung ke alumni. Pertanyaan apa pun boleh!",
+    activity: "Sambutan",
+    description:
+      "Sambutan lanjutan dan motivasi untuk siswa tentang pentingnya mempersiapkan diri ke dunia kampus.",
   },
   {
-    time: "09.30 – 10.00",
-    activity: "Info Jurusan & Kampus",
-    description: "Deep dive ke dunia jurusan, beasiswa, dan kehidupan kampus",
+    activity: "Pemaparan Kampus",
+    description:
+      "Sesi sharing dari alumni tentang kampus, jurusan, kehidupan perkuliahan.",
   },
   {
-    time: "10.00 – 10.15",
-    activity: "Penutup & Dokumentasi",
-    description: "Foto bersama alumni dan doorprize untuk peserta",
+    activity: "Talent dan Talkshow",
+    description:
+      "Penampilan bakat siswa dilanjutkan talkshow santai dan sesi tanya jawab bersama alumni.",
   },
-]
+];
 
 export default function ScheduleSection() {
   return (
-    <section id="schedule" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#fff1d2] via-[#fff8eb] to-[#f4ecff]">
+    <section
+      id="schedule"
+      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#fff1d2] via-[#fff8eb] to-[#f4ecff]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#2b1b60] mb-4">Rundown Acara</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#2b1b60] mb-4">
+            Rundown Acara
+          </h2>
           <div className="space-y-2 text-[#4c3f7d]">
             <p>
-              📍 <span className="font-semibold">Lokasi:</span> Aula Sekolah
-            </p>
-            <p>
-              👕 <span className="font-semibold">Dresscode:</span> Rapi (bebas baju apa pun yang nyaman)
+              📍 <span className="font-semibold">Lokasi:</span> Boash Convention
+              Center
             </p>
           </div>
         </div>
@@ -60,18 +66,18 @@ export default function ScheduleSection() {
                 {/* Timeline dot and line */}
                 <div className="flex flex-col items-center">
                   <div className="w-4 h-4 bg-[#f7c768] rounded-full mt-3"></div>
-                  {index !== schedule.length - 1 && <div className="w-1 h-24 bg-[#f4ecff]"></div>}
+                  {index !== schedule.length - 1 && (
+                    <div className="w-1 h-24 bg-[#f4ecff]"></div>
+                  )}
                 </div>
 
                 {/* Content */}
                 <Card className="flex-1 p-4 border-0 hover:shadow-md transition-shadow bg-white/80">
-                  <div className="flex items-start gap-3">
-                    <Clock size={20} className="text-[#f49b3f] flex-shrink-0 mt-1" />
-                    <div className="flex-1">
-                      <p className="text-sm font-bold text-[#f49b3f]">{item.time}</p>
-                      <h3 className="text-lg font-bold text-[#2b1b60] mt-1">{item.activity}</h3>
-                      <p className="text-[#4c3f7d] text-sm mt-1">{item.description}</p>
-                    </div>
+                  <div className="space-y-1">
+                    <h3 className="text-lg font-bold text-[#2b1b60]">
+                      {item.activity}
+                    </h3>
+                    <p className="text-[#4c3f7d] text-sm">{item.description}</p>
                   </div>
                 </Card>
               </div>
@@ -80,5 +86,5 @@ export default function ScheduleSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

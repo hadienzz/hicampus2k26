@@ -76,19 +76,10 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Instagram size={18} className="text-[#f7c768]" />
                 <a
-                  href="#"
+                  href="https://www.instagram.com/hicampus2026"
                   className="text-[#c6b9ff] hover:text-[#f7c768] transition text-sm"
                 >
-                  @hicampus.official
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <MessageCircle size={18} className="text-[#f7c768]" />
-                <a
-                  href="#"
-                  className="text-[#c6b9ff] hover:text-[#f7c768] transition text-sm"
-                >
-                  +62 812-3456-7890
+                  @hicampus2026
                 </a>
               </li>
             </ul>

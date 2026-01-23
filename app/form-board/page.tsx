@@ -36,23 +36,23 @@ export default function FormBoardPage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50">
+    <div className="flex min-h-screen flex-col bg-slate-950">
       <Navbar />
       <main className="flex-1 py-12 px-4 md:py-20">
         <div className="container mx-auto max-w-2xl">
           <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Bagikan Momen Serumu!
             </h1>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-4 text-lg text-slate-300">
               Upload foto kegiatan Hicampus Goes to School dan tuliskan pesan
               kesanmu untuk teman-teman lainnya.
             </p>
           </div>
 
-          <Card className="border-none shadow-xl">
+          <Card className="border border-slate-800 bg-slate-900/80 shadow-xl">
             <CardHeader>
-              <CardTitle>Form Vision Board</CardTitle>
+              <CardTitle className="text-white">Form Vision Board</CardTitle>
               <CardDescription>
                 Ceritakan perjalananmu hari ini bersama para alumni hebat.
               </CardDescription>
@@ -100,7 +100,7 @@ export default function FormBoardPage() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-blue-600 py-6 text-lg hover:bg-blue-700 text-white"
+                  className="w-full bg-emerald-500 py-6 text-lg text-slate-950 hover:bg-emerald-600"
                   disabled={isPending}
                 >
                   {isPending ? (

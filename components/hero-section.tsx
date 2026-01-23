@@ -29,7 +29,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                Saksikan <span className="text-[#f49b3f]">Hicampus</span> Hadir
+                Saksikan <span className="text-[#f49b3f]">Hi Campus</span> Hadir
                 Kembali!
               </motion.h1>
               <motion.p
@@ -52,7 +52,7 @@ export default function HeroSection() {
             >
               <div className="flex items-center gap-3 text-[#241457]">
                 <Calendar size={20} className="text-[#f49b3f]" />
-                <span className="font-semibold">24 Januari 2026</span>
+                <span className="font-semibold">Sabtu, 24 Januari 2026</span>
               </div>
               <div className="flex items-center gap-3 text-[#241457]">
                 <MapPin size={20} className="text-[#f49b3f]" />
