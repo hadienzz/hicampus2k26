@@ -14,11 +14,12 @@ export type PostVisionBoard = {
 const usePostBoard = () => {
   const router = useRouter();
 
-	const validationSchema = Yup.object({
-		name: Yup.string().required("Nama wajib diisi"),
-		message: Yup.string().required("Kesan & pesan wajib diisi"),
-		photo: Yup.mixed<File | null>().nullable().notRequired(),
-	});
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Nama wajib diisi"),
+    message: Yup.string().required("Kesan & pesan wajib diisi"),
+    // Foto opsional: gunakan generic File saja, lalu buat nullable
+    photo: Yup.mixed<File>().nullable().notRequired(),
+  });
 
   const mutation = useMutation({
     mutationFn: async (payload: PostVisionBoard) => {
