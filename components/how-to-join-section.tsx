@@ -37,7 +37,7 @@ export default function HowToJoinSection() {
             Cara Ikut Acara Hicampus
           </h2>
           <p className="text-lg text-gray-600">
-            Gampang banget, tinggal 3 langkah aja!
+            Gampang banget, tinggal 2 langkah aja!
           </p>
         </div>
 
@@ -72,15 +72,6 @@ export default function HowToJoinSection() {
             Ayo, jangan sampai ketinggalan informasi seputar PTN dan jurusan
             favoritmu, lengkap dengan insight dan tips langsung dari para
             alumni.
-          </p>
-          <Button
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold"
-          >
-            Isi Form Pendaftaran
-          </Button>
-          <p className="text-sm text-gray-500 mt-4">
-            Acara ini 100% gratis untuk semua siswa
           </p>
         </div>
       </div>
