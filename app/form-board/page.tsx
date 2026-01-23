@@ -60,15 +60,21 @@ export default function FormBoardPage() {
             <CardContent>
               <form onSubmit={formik.handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Nama Lengkap</Label>
+                  <Label htmlFor="name" className="text-white">
+                    Nama Lengkap
+                  </Label>
                   <Input
                     id="name"
+                    className="text-white"
                     name="name"
                     placeholder="Masukkan namamu..."
                     value={formik.values.name}
                     onChange={formik.handleChange}
                     required
                   />
+                  {formik.touched.name && formik.errors.name ? (
+						<p className="text-xs text-red-400 mt-1">{formik.errors.name}</p>
+					) : null}
                 </div>
 
                 <div className="space-y-2">
@@ -83,19 +89,29 @@ export default function FormBoardPage() {
                       formik.setFieldValue("photo_preview", preview);
                     }}
                   />
+                  {!formik.values.photo && (
+						<p className="text-xs text-slate-400 mt-1">
+							Jika kamu tidak mengunggah foto, hanya nama dan pesanmu yang akan tampil di vision board.
+						</p>
+					)}
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Kesan & Pesan</Label>
+                  <Label htmlFor="message" className="text-white  ">
+                    Kesan & Pesan
+                  </Label>
                   <Textarea
                     id="message"
                     name="message"
                     placeholder="Tuliskan pengalaman berhargamu hari ini..."
-                    className="min-h-30 resize-none"
+                    className="min-h-30 resize-none text-white"
                     value={formik.values.message}
                     onChange={formik.handleChange}
                     required
                   />
+                  {formik.touched.message && formik.errors.message ? (
+						<p className="text-xs text-red-400 mt-1">{formik.errors.message}</p>
+					) : null}
                 </div>
 
                 <Button

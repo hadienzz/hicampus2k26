@@ -62,7 +62,7 @@ export function ImageUploadField({
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <p className="text-sm font-medium text-foreground">{label}</p>
+        <p className="text-sm font-medium text-white`">{label}</p>
         {helperText ? (
           <p className="text-xs text-muted-foreground">{helperText}</p>
         ) : null}

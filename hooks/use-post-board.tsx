@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import * as Yup from "yup";
 import { useMutation } from "@tanstack/react-query";
 import axiosInstance from "@/lib/axios";
 import { useRouter } from "next/navigation";
@@ -12,6 +13,12 @@ export type PostVisionBoard = {
 
 const usePostBoard = () => {
   const router = useRouter();
+
+	const validationSchema = Yup.object({
+		name: Yup.string().required("Nama wajib diisi"),
+		message: Yup.string().required("Kesan & pesan wajib diisi"),
+		photo: Yup.mixed<File | null>().nullable().notRequired(),
+	});
 
   const mutation = useMutation({
     mutationFn: async (payload: PostVisionBoard) => {
@@ -50,6 +57,9 @@ const usePostBoard = () => {
       photo_preview: "",
       message: "",
     },
+		validationSchema,
+		validateOnBlur: true,
+		validateOnChange: false,
     onSubmit: (values) => {
       mutation.mutate(values);
     },

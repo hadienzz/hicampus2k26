@@ -24,19 +24,25 @@ const faqItems: FAQItem[] = [
   //     "Boleh banget! Bahkan semakin awal kamu mulai persiapan, semakin bagus. Acaranya cocok buat kelas X sampai kelas XII. Malah, kelas X bisa mulai planning dari sekarang.",
   // },
   {
-    question: "Kalau belum tahu mau ambil jurusan apa, apa masih relevan ikut?",
+    question:
+      "Kalau belum tahu mau memilih kampus atau jurusan, apakah Hi Campus 2026 ini masih relevan?",
     answer:
-      "Sangat relevan! Ini justru tempat terbaik buat kamu yang masih bingung. Alumni akan cerita pros-cons dari jurusannya, dan kamu bisa tanya langsung. Sering kali setelah acar ini, siswa jadi punya gambaran lebih jelas.",
+      "Sangat relevan. Campus Expo dirancang untuk membantu siswa yang masih dalam tahap eksplorasi dengan menghadirkan berbagai kampus serta pengalaman langsung dari kakak alumni, sehingga peserta dapat memperoleh gambaran yang lebih jelas sebelum menentukan pilihan.",
   },
   {
-    question: "Apakah bisa tanya secara pribadi ke alumni setelah sesi?",
+    question: "Kampus apa saja yang akan hadir?",
     answer:
-      "Tentu saja! Setelah sesi formal, ada waktu informal di mana kamu bisa ngobrol santai, tukar kontak, atau bahkan tanya lebih detail ke alumni. Beberapa alumni juga bersedia jadi mentor informal setelahnya.",
+      "Hi Campus 2026 menghadirkan perwakilan lebih dari 22 perguruan tinggi negeri di Indonesia.",
   },
   {
-    question: "Bagaimana kalau saya tidak bisa hadir?",
+    question: "Bagaimana cara mengikuti Hi Campus 2026?",
     answer:
-      "Tidak masalah. Hubungi OSIS atau Wali Kelas untuk beritahu. Tapi kami sarankan datang karena energinya lain banget live dibanding dari jauh. Plus, ada doorprize untuk peserta yang hadir.",
+      "Cukup isi form pendaftaran, datang sesuai jadwal dan lokasi acara, lalu manfaatkan setiap sesi untuk bertanya dan mengeksplorasi berbagai pilihan kampus yang diberikan. ",
+  },
+  {
+    question: "Apakah wajib mendaftar sebelum mengikuti acara Hi Campus 2026?",
+    answer:
+      "Sangat diwajibkan. Pendaftaran dilakukan melalui form online untuk keperluan pendataan dan syarat mendapatkan souvenir.",
   },
   {
     question: "Apakah akan ada recording?",
@@ -55,7 +61,7 @@ export default function FAQSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#2b1b60] mb-4">
-            Pertanyaan yang Sering Diajukan
+            Frequently Asked Question
           </h2>
           <p className="text-lg text-[#4c3f7d]">
             Kalau ada yang masih bingung, jawaban di bawah ini mungkin membantu
