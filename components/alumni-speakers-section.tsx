@@ -37,7 +37,7 @@ const campuses: Campus[] = [
     name: "UIN Syarif Hidayatullah Jakarta",
     image: "/campus/uin.jpg",
     location: "Jumlah Alumni: 50",
-    link: "http://uin.ac.id/",
+    link: "http://uinjkt.ac.id/",
   },
   {
     name: "Universitas Negeri Jakarta (UNJ)",
