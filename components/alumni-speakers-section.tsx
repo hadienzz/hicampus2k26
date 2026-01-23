@@ -5,6 +5,7 @@ interface Campus {
   name: string;
   image: string;
   location?: string;
+  link: string;
 }
 
 const campuses: Campus[] = [
@@ -12,46 +13,55 @@ const campuses: Campus[] = [
     name: "IPB University",
     image: "/campus/ipb.png",
     location: "Jumlah Alumni: 85",
+    link: "https://www.ipb.ac.id/id/",
   },
   {
     name: "Institut Teknologi Sumatera (ITERA)",
     image: "/campus/itera.png",
     location: "Jumlah Alumni: 18",
+    link: "https://www.itera.ac.id/",
   },
   {
     name: "Universitas Brawijaya (UB)",
     image: "/campus/ub.png",
     location: "Jumlah Alumni: 13",
+    link: "https://www.ub.ac.id/",
   },
   {
     name: "Universitas Indonesia (UI)",
     image: "/campus/ui.png",
     location: "Jumlah Alumni: 85",
+    link: "http://ui.ac.id/",
   },
   {
     name: "UIN Syarif Hidayatullah Jakarta",
     image: "/campus/uin.jpg",
     location: "Jumlah Alumni: 50",
+    link: "http://uin.ac.id/",
   },
   {
     name: "Universitas Negeri Jakarta (UNJ)",
     image: "/campus/unj.png",
     location: "Jumlah Alumni: 22",
+    link: "https://unj.ac.id/",
   },
   {
     name: "Universitas Padjadjaran (UNPAD)",
     image: "/campus/unpad.jpg",
     location: "Jumlah Alumni: 15",
+    link: "https://www.unpad.ac.id/",
   },
   {
     name: "Universitas Pendidikan Indonesia (UPI)",
     image: "/campus/upi.png",
     location: "Jumlah Alumni: 29",
+    link: "https://www.upi.edu/",
   },
   {
     name: "Universitas Pembangunan Nasional Veteran (UPN)",
     image: "/campus/upn.webp",
     location: "Jumlah Alumni: 35",
+    link: "https://www.upnvj.ac.id/",
   },
 ];
 
@@ -93,9 +103,14 @@ export default function AlumniSpeakersSection() {
                 <p className="text-sm text-gray-600 mb-3">{campus.location}</p>
               )}
 
-              <button className="w-full py-2 px-4 text-sm font-semibold text-blue-600 hover:bg-blue-50 rounded-lg transition">
+              <a
+                href={campus.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-2 px-4 text-sm font-semibold text-blue-600 hover:bg-blue-50 rounded-lg transition"
+             >
                 Lihat detail kampus
-              </button>
+              </a>
             </Card>
           ))}
         </div>

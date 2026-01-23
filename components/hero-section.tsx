@@ -62,10 +62,11 @@ export default function HeroSection() {
             </motion.div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-4">
+            <a className="flex flex-col sm:flex-row gap-3 pt-4" href="#schedule">
               <Button
                 size="lg"
                 className="bg-linear-to-r from-[#f7c768] to-[#f49b3f] hover:brightness-105 text-[#231642] rounded-full font-semibold flex items-center gap-2 shadow-md"
+              
               >
                 Lihat Detail Acara
                 <ArrowRight size={20} />
@@ -77,7 +78,7 @@ export default function HeroSection() {
               >
                 Daftar Sekarang
               </Button> */}
-            </div>
+            </a>
           </div>
 
           {/* Right Illustration */}

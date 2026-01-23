@@ -42,7 +42,7 @@ export default function ScheduleSection() {
   return (
     <section
       id="schedule"
-      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#fff1d2] via-[#fff8eb] to-[#f4ecff]"
+      className="py-12 sm:py-16 lg:py-20 bg-linear-to-br from-[#fff1d2] via-[#fff8eb] to-[#f4ecff]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
