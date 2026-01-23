@@ -109,7 +109,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-[#c6b9ff] space-y-4 sm:space-y-0">
           <p className="flex items-center gap-2">
-            &copy; 2025 Hicampus <Heart size={16} className="text-[#ff7aa2]" />{" "}
+            &copy; 2026 Hi Campus <Heart size={16} className="text-[#ff7aa2]" />{" "}
             Semua hak dilindungi.
           </p>
           <div className="flex gap-6">
